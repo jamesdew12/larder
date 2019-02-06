@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Larderdbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Nutrition</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @larderdbs.each do |larderdb| %>
+      <tr>
+        <td><%= larderdb.food %></td>
+        <td><%= larderdb.nutrition %></td>
+        <td><%= link_to 'Show', larderdb %></td>
+        <td><%= link_to 'Edit', edit_larderdb_path(larderdb) %></td>
+        <td><%= link_to 'Destroy', larderdb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Larderdb', new_larderdb_path %>

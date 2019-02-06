@@ -1,0 +1,2 @@
+class Larderdb < ApplicationRecord
+end

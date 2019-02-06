@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Food:</strong>
+  <%= @larderdb.food %>
+</p>
+
+<p>
+  <strong>Nutrition:</strong>
+  <%= @larderdb.nutrition %>
+</p>
+
+<%= link_to 'Edit', edit_larderdb_path(@larderdb) %> |
+<%= link_to 'Back', larderdbs_path %>
